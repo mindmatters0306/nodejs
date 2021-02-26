@@ -24,7 +24,7 @@ phases:
       - echo Pushing the Docker images...
       - docker images
       - docker push 951721031341.dkr.ecr.us-west-2.amazonaws.com/nodejs-app-repo
-      - printf '[{"name":"nodejs-container","imageUri":"%s"}]' 951721031341.dkr.ecr.us-west-2.amazonaws.com/nodejs-app-repo > imagedefinitions.json
+      - printf '[{"name":"Nodejs-app-container","imageUri":"%s"}]' 951721031341.dkr.ecr.us-west-2.amazonaws.com/nodejs-app-repo > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
